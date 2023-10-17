@@ -5,10 +5,10 @@ function setup() {
 
 function draw() {
   // Setting the background color
-  background(30);
+  background(40);
   
   // Rotating the object 60 degress around X axis
-  rotateX(60);
+  rotateX(70);
   
   noFill()
   stroke(255)
@@ -19,7 +19,7 @@ function draw() {
     var b = map(cos(frameCount), -1, 1, 200, 100)
     
     stroke(r, g, b)
-    rotate(frameCount/20)
+    rotate(frameCount/9)
 
     beginShape()
     for (var j=0; j < 360; j+=40) {
